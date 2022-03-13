@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="257.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RequestController">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" prefHeight="17.0" prefWidth="170.0" text="Write the message :" />
+      <Button fx:id="send" layoutX="290.0" layoutY="209.0" mnemonicParsing="false" onAction="#sendAction" text="Send" />
+      <TextArea fx:id="msgField" layoutX="28.0" layoutY="62.0" prefHeight="134.0" prefWidth="304.0" />
+   </children>
+</AnchorPane>

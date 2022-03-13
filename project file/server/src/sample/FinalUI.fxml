@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FinalUIController">
+   <children>
+      <Label layoutX="42.0" layoutY="52.0" prefHeight="20.0" prefWidth="178.0" text="Server Launched on Port : " textFill="#1160fc">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="port" layoutX="220.0" layoutY="54.0" prefHeight="20.0" prefWidth="74.0" textFill="#eb0909">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ListView fx:id="activity" layoutX="42.0" layoutY="132.0" prefHeight="200.0" prefWidth="266.0" />
+      <Label layoutX="42.0" layoutY="96.0" prefHeight="17.0" prefWidth="136.0" text="Client Status :" textFill="#0ed72c">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="96.0" prefHeight="17.0" prefWidth="146.0" text="Client Messages :" textFill="#07c63a">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="508.0" layoutY="349.0" mnemonicParsing="false" onAction="#refreshAction" text="Refresh" />
+      <ListView fx:id="msg" layoutX="320.0" layoutY="132.0" prefHeight="200.0" prefWidth="248.0" />
+   </children>
+</AnchorPane>
